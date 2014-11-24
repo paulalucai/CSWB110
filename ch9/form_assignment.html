@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Week 11, Ch 9 Assignment</title>
+	</head>
+
+	<body>
+		<h1>Student Feedback Form</h1>
+			<form action="http://palomar.blackboard.edu" method="get">
+				<fieldset>
+					<p><label for="fname"><legend>First Name:</legend>
+						<input type="text" id="fname" placeholder="First Name" name="fname" autofocus="on" required/> (First name)
+					</label></p>
+
+					<p><label for="lname"><legend>Last Name:</legend>
+						<input type="text" id="lname" placeholder="Last Name" name "lname" required/> (Last name)
+					</label></p>
+
+					<p><label for="email"><legend>Email:</legend>
+						<input type="text" id="email" placeholder="name@domain.com" name="email" required/> (name@domain.com)
+					</label></p>
+				</fieldset>
+
+				<fieldset>
+				<h3>Choose a Day of the Week</h3>
+					<p><label for="txtList"><legend>Weekdays:</legend>
+						<input type="text" id="txtList" placeholder="Choose a day" list="days" name="txtList" />
+						<datalist id="days">
+								<option value="Sunday"></option>
+								<option value="Monday"></option>
+								<option value="Tuesday"></option>
+								<option value="Wednesday"></option>
+								<option value="Thursday"></option>
+								<option value="Friday"></option>
+								<option value="Saturday"></option>
+						</datalist>
+					</p>
+				</fieldset>
+
+				<fieldset>
+					<details>
+						<summary><legend>Optional Survey Question</legend></summary>
+							<p><label for="year">College Year:
+								<input type="text" id="year" name="year" placeholder="Year"/> (e.g. Freshman)
+							</label></p>
+					</details>
+				</fieldset>
+
+				<fieldset>
+					<p>
+						<legend><strong>Things you liked:</strong></legend><br>
+
+						<label for="campus">Campus
+							<input type="checkbox" name="thingsliked" id="campus" value="Campus"></label>
+						<label>Students
+							<input type="checkbox" name="thingsliked" id="campus" value="Students"></label>
+						<label>Location
+							<input type="checkbox" name="thingsliked" id="campus" value="Location"></label>
+						<label>Atmosphere
+							<input type="checkbox" name="thingsliked" id="campus" value="Atmosphere"></label>
+						<label>Dorm Rooms
+							<input type="checkbox" name="thingsliked" id="campus" value="Dorm Rooms"></label>
+						<label>Sports
+							<input type="checkbox" name="thingsliked" id="campus" value="Sports"></label>
+					</p>
+
+					<p>
+						<legend><strong>How did you find our school:</strong></legend><br>
+
+						<label for="friends">Friends
+							<input type="radio" name="howfound" value="Friends"></label>
+						<label for="tv">Television
+							<input type="radio" name="howfound" id="howfound" value="Television"></label>
+						<label for="internet">Internet
+							<input type="radio" name="howfound" id="howfound" value="Internet"></label>
+						<label for="other">Other
+							<input type="radio" name="howfound" id="howfound" value="Other"></label>
+					</p>
+				</fieldset>
+
+				<fieldset>
+					<p>
+						<label for="comments"><legend><strong>Additional Comments:</legend></strong><br>
+							<textarea id="comments" name="comments" cols="36" rows="5">Enter comments here!</textarea>
+						</label>
+					</p>
+				</fieldset>
+
+				<fieldset>
+					<p>
+						<input type="submit" name="submit" id="submit" value="Submit">
+						<input type="reset" name"reset" id="reset" value="Clear Form">
+					</p>
+				</fieldset>
+			</form>
+	</body>
+</html>
